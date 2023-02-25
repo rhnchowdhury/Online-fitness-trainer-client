@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
-
         <div className="hero mt-8">
             <div className="hero-content flex-col lg:flex-row">
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl p-10">
