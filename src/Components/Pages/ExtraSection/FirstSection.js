@@ -1,13 +1,20 @@
 import React from 'react';
 import img from '../../../assets/phone.png';
 import { ImCheckmark } from "react-icons/im";
+import 'react-photo-view/dist/react-photo-view.css';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const FirstSection = () => {
     return (
         <div className='' style={{ background: 'rgb(204, 165, 82)' }}>
             <div className="hero">
                 <div className="hero-content flex-col lg:flex-row">
-                    <img src={img} alt='' className="h-auto w-auto rounded-lg" />
+                    <PhotoProvider>
+                        <PhotoView src={img}>
+
+                            <img src={img} alt='' className="h-auto w-auto rounded-lg" />
+                        </PhotoView>
+                    </PhotoProvider>
                     <div className=''>
                         <h1 className="text-4xl font-bold">WHY JOIN THE ONLINE GYM?</h1>
                         <div className='mt-12'>
