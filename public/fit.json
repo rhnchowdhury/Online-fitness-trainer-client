@@ -1,0 +1,74 @@
+[
+    {
+        "course_id": 1,
+        "title": "Push-Up",
+        "image": "https://previews.123rf.com/images/lacheev/lacheev2010/lacheev201000478/157501475-online-home-sports-young-fit-woman-exercising-to-video-tutorial-indoors-doing-plank-or-push-up.jpg",
+        "price": 90,
+        "details": "Pushups are an exercise in which a person, keeping a prone position, with the hands palms down under the shoulders, the balls of the feet on the ground, and the back straight, pushes the body up and lets it down by an alternate straightening and bending of the arms. The push-up helps to build muscle and improve strength throughout the upper body.",
+        "ratings": 4.9
+    },
+    {
+        "course_id": 2,
+        "title": "Sit-Up",
+        "image": "https://us.123rf.com/450wm/samwordley/samwordley2102/samwordley210200021/163951609-young-beautiful-latin-woman-working-out-at-home-connected-to-online-fitness-class-on-the-computer-la.jpg?ver=6",
+        "price": 70,
+        "details": "Situps are traditional core exercises often used in exercise programs due to their simplicity and effectiveness. Strong core muscles are linked to improved muscular strength and endurance in athletes. A strong core gives you proper posture, stability, and form, allowing you to perform at higher levels during any sport or physical activity.",
+        "ratings": 4.7
+    },
+    {
+        "course_id": 3,
+        "title": "Stretching",
+        "image": "https://previews.123rf.com/images/samwordley/samwordley2102/samwordley210200133/164414309-young-beautiful-latin-woman-working-out-at-home-connected-to-online-fitness-class-on-the-computer.jpg",
+        "price": 80,
+        "details": "Stretching keeps the muscles flexible, strong, and healthy, and we need that flexibility to maintain a range of motion in the joints. Without it, the muscles shorten and become tight. Then, when you call on the muscles for activity, they are weak and unable to extend all the way. Regular stretching helps increase your range of motion in the joints, improves blood circulation and posture and alleviates muscular tension throughout the body.",
+        "ratings": 4.8
+    },
+    {
+        "course_id": 4,
+        "title": "Yoga",
+        "image": "https://www.onebodypersonaltraining.com.au/wp-content/uploads/2022/07/exercise-yoga-workout-morning-home-outdoor.jpg",
+        "price": 60,
+        "details": "According to the National Institutes of Health, scientific evidence shows that yoga supports stress management, mental health, mindfulness, healthy eating, weight loss and quality sleep. It is a complete workout for both the body and the mind and has the potential to increase fat loss, develop muscle tone, and build flexibility, leading to a more toned lean-looking physique.",
+        "ratings": 4.8
+    },
+    {
+        "course_id": 5,
+        "title": "Plank",
+        "image": "https://perfectpersonaltraining.com/wp-content/uploads/2020/11/first-1024x682.jpg",
+        "price": 50,
+        "details": "Are you looking to get in shape, lose weight, decrease pain, and increase mobility? Any one of those things alone can be incredibly overwhelming. That’s why many people choose to hire a personal trainer. Personal trainers have the knowledge and experience to guide you along the path to accomplishing your goals. Keep reading to learn what to keep an eye out for when looking for fitness trainers near me.",
+        "ratings": 4.5
+    },
+    {
+        "course_id": 6,
+        "title": "Barbell",
+        "image": "https://thumbs.dreamstime.com/b/home-gym-workout-online-exercise-app-phone-fit-woman-watching-training-tutorial-video-using-digital-personal-trainer-183971481.jpg",
+        "price": 45,
+        "details": "The barbell is the longer version of the dumbbell that is used for free weight training and competitive sports, such as powerlifting, Olympic weight lifting, and CrossFit. Many exercises can be done using the barbell, such as bicep curl, bench press, Olympic weightlifting, overhead press, deadlift, and squat. According to the American Council on Exercise, barbell movements are one of the best ways to target large muscle groups and help strengthen functional movement patterns.",
+        "ratings": 4.5
+    },
+    {
+        "course_id": 7,
+        "title": "Squat Exercise",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/best-online-trainers-1648065629.jpg",
+        "price": 55,
+        "details": "Squatting every day will undoubtedly ramp up the amount of volume that you're putting on certain muscle groups. If you're doing them regularly, you're highly likely to start dropping body fat all over, including the belly and thighs. They don't just help you achieve wonderful, toned legs; they promote body-wide muscle building by creating an anabolic (muscle building) environment in the body.",
+        "ratings": 4.3
+    },
+    {
+        "course_id": 8,
+        "title": "Dumb-Bell",
+        "image": "https://previews.123rf.com/images/samwordley/samwordley2102/samwordley210200031/163951725-young-beautiful-latin-woman-working-out-at-home-connected-to-online-fitness-class-on-the-computer.jpg",
+        "price": 75,
+        "details": "Dumbbells are great for strength training, specifically loading the skeletal system to improve bone density. Dumbbell exercises are ideal for creating hypertrophy if you want to put on size. Just lowering a heavy dumbbell slowly once or six times a day is enough. For a total body workout, it's recommended lifting weights for 20 minutes to 30 minutes three days a week.",
+        "ratings": 4.6
+    },
+    {
+        "course_id": 9,
+        "title": "Squat to Stand",
+        "image": "https://d3fkd3qwryjxdh.cloudfront.net/images/GYMGUYZ-virtual-personal-training.2110200726015.jpg",
+        "price": 40,
+        "details": "Stand with feet shoulder-width apart, toes pointed out. Send hips back and down, bending knees to lower into a squat. Keep chest lifted. Drive feet into ground to stand back up.  If you're new to doing squats, aim for 3 sets of 12-15 reps of at least one type of squat. Squatting every day will undoubtedly ramp up the amount of volume that you're putting on certain muscle groups. This will in turn allow you to steadily progress in your training while getting through any plateaus you might hit.",
+        "ratings": 4.0
+    }
+]
