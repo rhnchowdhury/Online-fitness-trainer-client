@@ -5,7 +5,7 @@ import img from '../../../assets/musculo.png';
 const NavBar = () => {
     const menuItems = <React.Fragment>
         <li><Link to='/' className='text-white'>Home</Link></li>
-        <li><Link className='text-white'>Login</Link></li>
+        <li><Link to='/login' className='text-white'>Login</Link></li>
         <li><Link className='text-white'>Blog</Link></li>
     </React.Fragment>
     return (
