@@ -5,7 +5,7 @@ import FitnessCard from './FitnessCard';
 const Fitness = () => {
     const [fitness, setFitness] = useState([]);
     useEffect(() => {
-        fetch('fit.json')
+        fetch('http://localhost:5000/fit')
             .then(res => res.json())
             .then(data => {
                 console.log(data)
