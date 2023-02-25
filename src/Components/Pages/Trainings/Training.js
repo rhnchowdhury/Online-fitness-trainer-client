@@ -9,7 +9,7 @@ const Training = () => {
             .then(data => setTraining(data))
     }, [])
     return (
-        <div className='m-14'>
+        <div className='m-14' style={{ background: '#7b7b7b' }}>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 {
                     training.map(train => <TrainingCard key={train.course_id} train={train}></TrainingCard>)
