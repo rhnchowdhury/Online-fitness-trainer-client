@@ -4,7 +4,7 @@ import TrainingCard from './TrainingCard';
 const Training = () => {
     const [training, setTraining] = useState([]);
     useEffect(() => {
-        fetch('fit.json')
+        fetch('http://localhost:5000/fitness')
             .then(res => res.json())
             .then(data => setTraining(data))
     }, [])
