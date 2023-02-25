@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsArrowRight, IconName } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 
 const FitnessCard = ({ fit }) => {
     const { image, title, price, details } = fit;
