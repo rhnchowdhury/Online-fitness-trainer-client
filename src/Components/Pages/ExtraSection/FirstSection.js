@@ -11,7 +11,6 @@ const FirstSection = () => {
                 <div className="hero-content flex-col lg:flex-row">
                     <PhotoProvider>
                         <PhotoView src={img}>
-
                             <img src={img} alt='' className="h-auto w-auto rounded-lg" />
                         </PhotoView>
                     </PhotoProvider>
