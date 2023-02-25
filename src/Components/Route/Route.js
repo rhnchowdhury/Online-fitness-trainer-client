@@ -25,7 +25,7 @@ const router = createBrowserRouter([
             {
                 path: '/fitness/:id',
                 element: <FitnessDetails></FitnessDetails>,
-                loader: ({ params }) => fetch(`fit.json/fitness/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/fitness/${params.id}`)
             }
         ]
     }
