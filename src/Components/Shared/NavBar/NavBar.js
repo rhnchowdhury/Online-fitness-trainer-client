@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import img from '../../../assets/musculo.png';
 
 const NavBar = () => {
     const menuItems = <React.Fragment>
-        <li><Link>Home</Link></li>
-        <li><Link>Login</Link></li>
-        <li><Link>Blog</Link></li>
+        <li><Link to='/' className='text-white'>Home</Link></li>
+        <li><Link className='text-white'>Login</Link></li>
+        <li><Link className='text-white'>Blog</Link></li>
     </React.Fragment>
     return (
         <div className="navbar" style={{ background: '#7b7b7b' }}>
@@ -18,7 +19,7 @@ const NavBar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link className="btn btn-ghost normal-case text-xl">daisyUI</Link>
+                <img src={img} alt="" className='w-16' />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
