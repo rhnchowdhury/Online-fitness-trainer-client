@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Context/AuthProvider';
 
 const SignUp = () => {
+    const { createUser } = useContext(AuthContext);
+
     const handleSignUp = event => {
         event.preventDefault();
-    }
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        createUser(email, password, name)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+            .catch(err => console.error(err));
+    };
+
     return (
         <div className="hero lg:w-full">
             <div className="hero-content flex-col lg:flex-row">
