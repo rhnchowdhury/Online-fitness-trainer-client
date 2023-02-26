@@ -5,12 +5,49 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { AuthContext } from '../Context/AuthProvider';
 
 const FitnessDetails = () => {
-    const { image, title, price, details } = useLoaderData();
+    const { _id, image, title, price, details } = useLoaderData();
     const { user } = useContext(AuthContext);
 
     const handleReview = event => {
         event.preventDefault();
+        const form = event.target;
+        const name = `${form.first.value} ${form.last.value}`;
+        const email = user?.email || 'unregistered';
+        const url = form.url.value;
+        const message = form.message.value;
+
+        const review = {
+            training: _id,
+            trainingName: title,
+            price,
+            trainer: name,
+            email,
+            url,
+            message,
+        };
+
+        if (user?.email) {
+            fetch('http://localhost:5000/reviews', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(review)
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.acknowledged) {
+                        alert('review added successfully');
+                        form.reset();
+                    }
+                })
+                .catch(err => console.error(err));
+        }
+        else {
+            return alert('Please login to add a review');
+        }
     };
+
 
     return (
         <div className='m-14'>
