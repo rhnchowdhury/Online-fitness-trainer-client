@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import 'react-photo-view/dist/react-photo-view.css';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const TrainingCard = ({ train }) => {
     const { _id, image, title, price, details } = train;
     console.log(train)
     return (
         <div className="card w-80 glass mt-8">
-            <figure><img src={image} alt="car!" className='h-56' /></figure>
+            <figure>
+                <PhotoProvider>
+                    <PhotoView src={image}>
+                        <img src={image} alt="car!" className='h-56' />
+                    </PhotoView>
+                </PhotoProvider>
+            </figure>
             <div className="card-body">
                 <h2 className="card-title" style={{ color: 'rgb(204, 171, 82)' }}>{title}</h2>
                 <p>{details.slice(0, 100) + "..."}</p>
