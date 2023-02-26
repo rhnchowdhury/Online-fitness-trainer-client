@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import 'react-photo-view/dist/react-photo-view.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import { AuthContext } from '../Context/AuthProvider';
 
 const FitnessDetails = () => {
     const { image, title, price, details } = useLoaderData();
+    const { user } = useContext(AuthContext);
 
     const handleReview = event => {
         event.preventDefault();
@@ -36,7 +38,7 @@ const FitnessDetails = () => {
                             <input name='first' type="text" placeholder="First Name" className="input input-bordered w-fulls" />
                             <input name='last' type="text" placeholder="Last Name" className="input input-bordered w-full" />
                             <input name='url' type="text" placeholder="Image URL" className="input input-bordered w-full" />
-                            <input name='email' type="text" placeholder="Your Email" className="input input-bordered w-full" />
+                            <input name='email' type="text" placeholder="Your Email" defaultValue={user?.email} className="input input-bordered w-full" readOnly />
                         </div>
                         <textarea className="textarea textarea-bordered h-24 w-full mt-2" name='message' placeholder="Your message"></textarea>
                         <input className='btn  bg-violet-700 my-4' type="submit" value="Add review" />
