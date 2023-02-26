@@ -3,7 +3,7 @@ import { HiOutlineTrash } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 
 const ReviewShow = ({ review }) => {
-    const { student, url, message } = review;
+    const { trainingName, trainer, url, message } = review;
     return (
         <div>
             <tr>
@@ -22,7 +22,7 @@ const ReviewShow = ({ review }) => {
                     </div>
                 </td>
                 <td>
-                    <div className="font-bold">{student}</div>
+                    <div className="font-bold">{trainingName}</div>
                 </td>
                 <td>{message}</td>
                 <td>
