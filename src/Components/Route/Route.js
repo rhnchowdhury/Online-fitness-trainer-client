@@ -5,6 +5,7 @@ import FitnessDetails from "../Pages/Fitness/FitnessDetails";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Register/Login/Login";
 import SignUp from "../Pages/Register/SignUp/SignUp";
+import MyReview from "../Pages/Reviews/MyReviews/MyReview";
 import Training from "../Pages/Trainings/Training";
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: '/reviews',
+                element: <MyReview></MyReview>
             }
         ]
     }
