@@ -14,7 +14,7 @@ const FirstSection = () => {
                             <img src={img} alt='' className="h-auto w-auto rounded-lg" />
                         </PhotoView>
                     </PhotoProvider>
-                    <div className=''>
+                    <div className='-mt-14'>
                         <h1 className="text-4xl font-bold">WHY JOIN THE ONLINE GYM?</h1>
                         <div className='mt-12'>
                             <p className='flex font-bold'><ImCheckmark className='mt-1 mr-1 text-white'></ImCheckmark>12 Week Training Plan</p>
