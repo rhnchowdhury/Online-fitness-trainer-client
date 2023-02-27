@@ -19,7 +19,7 @@ const NavBar = () => {
                 <>
                     <li><Link to='/reviews' className='text-white'>My Review</Link></li>
                     <li><Link to='/add' className='text-white'>Add Service</Link></li>
-                    <li><Link to='/' onClick={handleLogOut} className='text-white'>Log Out</Link></li>
+                    <li><Link onClick={handleLogOut} className='text-white'>Log Out</Link></li>
                 </>
                 :
                 <li><Link to='/login' className='text-white'>Login</Link></li>
