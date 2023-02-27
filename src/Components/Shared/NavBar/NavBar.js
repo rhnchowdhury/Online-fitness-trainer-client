@@ -4,14 +4,22 @@ import img from '../../../assets/musculo.png';
 import { AuthContext } from '../../Pages/Context/AuthProvider';
 
 const NavBar = () => {
-    const { user } = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch()
+    }
+
     const menuItems = <React.Fragment>
         <li><Link to='/' className='text-white'>Home</Link></li>
         {
             user?.email ?
                 <>
                     <li><Link to='/reviews' className='text-white'>My Review</Link></li>
-                    <li><Link to='/logout' className='text-white'>Log Out</Link></li>
+                    <li><Link to='/add' className='text-white'>Add Service</Link></li>
+                    <li><Link to='/' onClick={handleLogOut} className='text-white'>Log Out</Link></li>
                 </>
                 :
                 <li><Link to='/login' className='text-white'>Login</Link></li>
