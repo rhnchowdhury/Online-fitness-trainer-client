@@ -7,7 +7,7 @@ const MyReview = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews?email=${user.email}`)
+        fetch(`http://localhost:5000/reviews?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [user?.email]);
@@ -24,8 +24,9 @@ const MyReview = () => {
                                     <input type="checkbox" className="checkbox" />
                                 </label>
                             </th>
-                            <th>Picture</th>
+                            <th>Training Title</th>
                             <th>Name</th>
+                            <th>Picture</th>
                             <th>Message</th>
                             <th>Update</th>
                         </tr>
