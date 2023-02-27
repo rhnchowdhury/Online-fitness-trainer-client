@@ -15,15 +15,19 @@ const MyReview = () => {
     const handleDelete = id => {
         const proceed = window.confirm('You want to cancel this order?')
         if (proceed) {
-            fetch(``, {
+            fetch(`http://localhost:5000/reviews/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data)
+                    if (data.deletedCount > 0) {
+                        alert('deleted successfully')
+                        const remaining = reviews.filter(rev => rev._id !== id);
+                        setReviews(remaining);
+                    }
                 })
         }
-    }
+    };
 
     return (
         <div>
@@ -48,7 +52,7 @@ const MyReview = () => {
                         {
                             reviews.map(review => <MyReviewShow key={review._id}
                                 review={review}
-
+                                handleDelete={handleDelete}
                             ></MyReviewShow>)
                         }
                     </tbody>

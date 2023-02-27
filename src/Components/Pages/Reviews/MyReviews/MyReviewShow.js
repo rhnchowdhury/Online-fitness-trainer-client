@@ -2,12 +2,8 @@ import React from 'react';
 import { HiOutlineTrash } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 
-const ReviewShow = ({ review }) => {
+const ReviewShow = ({ review, handleDelete }) => {
     const { _id, trainingName, trainer, url, message } = review;
-
-    const handleDelete = _id => {
-
-    };
 
     return (
 

@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import img from '../../../assets/musculo.png';
+import { AuthContext } from '../../Pages/Context/AuthProvider';
 
 const NavBar = () => {
+    const { user } = useContext(AuthContext);
     const menuItems = <React.Fragment>
         <li><Link to='/' className='text-white'>Home</Link></li>
-        <li><Link to='/reviews' className='text-white'>My Review</Link></li>
-        <li><Link to='/login' className='text-white'>Login</Link></li>
+        {
+            user?.email ?
+                <>
+                    <li><Link to='/reviews' className='text-white'>My Review</Link></li>
+                    <li><Link to='/logout' className='text-white'>Log Out</Link></li>
+                </>
+                :
+                <li><Link to='/login' className='text-white'>Login</Link></li>
+        }
         <li><Link to='/blog' className='text-white'>Blog</Link></li>
     </React.Fragment>
     return (
