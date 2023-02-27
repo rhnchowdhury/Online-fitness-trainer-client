@@ -22,9 +22,6 @@ const AddTrainingShow = () => {
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title">{ad.name}</h2>
                                 <p>{ad.message}</p>
-                                <div className="card-actions">
-                                    <button className="btn btn-primary">Details</button>
-                                </div>
                             </div>
                         </div>
                     </div>

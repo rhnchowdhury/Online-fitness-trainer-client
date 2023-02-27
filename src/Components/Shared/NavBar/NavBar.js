@@ -55,7 +55,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href='#google' className="btn bg-purple-700" onClick={handleGoogleLogin}><FaGoogle></FaGoogle> <span className='ml-2'>Sign in</span></a>
+                <a href='#google' className="btn-outline btn text-white" onClick={handleGoogleLogin}><FaGoogle></FaGoogle> <span className='ml-2'>Sign in</span></a>
             </div>
         </div>
     );

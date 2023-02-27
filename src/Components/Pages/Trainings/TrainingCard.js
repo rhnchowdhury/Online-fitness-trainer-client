@@ -18,7 +18,7 @@ const TrainingCard = ({ train }) => {
             <div className="card-body">
                 <h2 className="card-title" style={{ color: 'rgb(204, 171, 82)' }}>{title}</h2>
                 <p>{details.slice(0, 100) + "..."}</p>
-                <p><strong style={{ color: '#7b7b7b' }}>Subscription fee: </strong><span>${price}</span></p>
+                <p><strong style={{ color: 'rgb(204, 171, 82)' }}>Subscription fee: </strong><span>${price}</span></p>
                 <div className="card-actions justify-end">
                     <Link to={`/fitness/${_id}`}><button className="btn" style={{ backgroundColor: 'rgb(204, 165, 82)', border: '2px solid rgb(204, 165, 82)' }}>View Details</button></Link>
                 </div>
