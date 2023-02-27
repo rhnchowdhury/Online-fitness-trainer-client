@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import 'react-photo-view/dist/react-photo-view.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { AuthContext } from '../Context/AuthProvider';
+import Review from '../Reviews/OtherReviews/Review';
 
 const FitnessDetails = () => {
     const { _id, image, title, price, details } = useLoaderData();
@@ -68,7 +69,7 @@ const FitnessDetails = () => {
                 </div>
                 <div>
                     <h1 className='text-violet-700 font-bold text-4xl m-8 card-actions justify-center'>Others Review</h1>\
-
+                    <Review></Review>
                     <h1 className='text-violet-700 font-bold text-4xl m-8 card-actions justify-center'>Add Your Review</h1>
                     <form onSubmit={handleReview}>
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>

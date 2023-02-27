@@ -1,17 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { AuthContext } from '../../Context/AuthProvider';
-import MyReviewShow from './MyReviewShow';
+import React, { useEffect, useState } from 'react';
+import ReviewShow from './ReviewShow';
 
-const MyReview = () => {
-    const { user } = useContext(AuthContext);
-    const [reviews, setReviews] = useState([]);
+const Review = () => {
+    const [otherReview, setOtherReview] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews?email=${user?.email}`)
+        fetch('http://localhost:5000/reviews')
             .then(res => res.json())
-            .then(data => setReviews(data))
-    }, [user?.email]);
-
+            .then(data => setOtherReview(data))
+    }, []);
     return (
         <div>
             <div className="overflow-x-auto w-full">
@@ -33,16 +30,16 @@ const MyReview = () => {
                     </thead>
                     <tbody>
                         {
-                            reviews.map(review => <MyReviewShow key={review._id}
-                                review={review}
+                            otherReview.map(others => <ReviewShow key={others._id}
+                                others={others}
 
-                            ></MyReviewShow>)
+                            ></ReviewShow>)
                         }
                     </tbody>
                 </table>
             </div>
-        </div >
+        </div>
     );
 };
 
-export default MyReview;
+export default Review;
