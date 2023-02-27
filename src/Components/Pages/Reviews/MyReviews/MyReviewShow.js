@@ -3,13 +3,18 @@ import { HiOutlineTrash } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 
 const ReviewShow = ({ review }) => {
-    const { trainingName, trainer, url, message } = review;
+    const { _id, trainingName, trainer, url, message } = review;
+
+    const handleDelete = _id => {
+
+    };
+
     return (
 
         <tr>
             <th>
                 <label>
-                    <button className='btn btn-ghost'><HiOutlineTrash className=' w-6 h-6'></HiOutlineTrash></button>
+                    <button onClick={() => handleDelete(_id)} className='btn btn-ghost'><HiOutlineTrash className=' w-6 h-6'></HiOutlineTrash></button>
                 </label>
             </th>
             <td>

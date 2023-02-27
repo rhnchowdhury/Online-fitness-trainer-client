@@ -12,6 +12,19 @@ const MyReview = () => {
             .then(data => setReviews(data))
     }, [user?.email]);
 
+    const handleDelete = id => {
+        const proceed = window.confirm('You want to cancel this order?')
+        if (proceed) {
+            fetch(``, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                })
+        }
+    }
+
     return (
         <div>
             <div className="overflow-x-auto w-full">

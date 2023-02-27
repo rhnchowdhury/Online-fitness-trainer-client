@@ -16,16 +16,10 @@ const Review = () => {
 
                     <thead>
                         <tr>
-                            <th>
-                                <label>
-                                    <input type="checkbox" className="checkbox" />
-                                </label>
-                            </th>
                             <th>Training Title</th>
                             <th>Name</th>
                             <th>Picture</th>
                             <th>Message</th>
-                            <th>Update</th>
                         </tr>
                     </thead>
                     <tbody>
