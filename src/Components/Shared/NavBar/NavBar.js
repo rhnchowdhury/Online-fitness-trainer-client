@@ -2,15 +2,25 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import img from '../../../assets/musculo.png';
 import { AuthContext } from '../../Pages/Context/AuthProvider';
+import { FaGoogle } from "react-icons/fa";
 
 const NavBar = () => {
-    const { user, logOut } = useContext(AuthContext);
+    const { user, googleSignIn, logOut } = useContext(AuthContext);
+
+    const handleGoogleLogin = () => {
+        googleSignIn()
+            .then(result => {
+                const googleUser = result.user;
+                console.log(googleUser)
+            })
+            .catch(err => console.log(err))
+    }
 
     const handleLogOut = () => {
         logOut()
             .then()
             .catch()
-    }
+    };
 
     const menuItems = <React.Fragment>
         <li><Link to='/' className='text-white'>Home</Link></li>
@@ -45,7 +55,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link className="btn">Get started</Link>
+                <a href='#google' className="btn bg-purple-700" onClick={handleGoogleLogin}><FaGoogle></FaGoogle> <span className='ml-2'>Sign in</span></a>
             </div>
         </div>
     );
