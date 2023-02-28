@@ -1,4 +1,5 @@
 import React from 'react';
+import useTitle from '../../../Hooks/useTitle';
 import AddTrainingShow from '../AddTrainings/AddTrainingShow';
 import Banner from '../Banner/Banner';
 import FirstSection from '../ExtraSection/FirstSection';
@@ -6,6 +7,7 @@ import Faq from '../Faqs/Faq';
 import Fitness from '../Fitness/Fitness';
 
 const Home = () => {
+    useTitle('Home');
     return (
         <div>
             <Banner></Banner>

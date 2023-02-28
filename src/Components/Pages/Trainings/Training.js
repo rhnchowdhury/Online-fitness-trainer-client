@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import useTitle from '../../../Hooks/useTitle';
 import TrainingCard from './TrainingCard';
 
 const Training = () => {
     const [training, setTraining] = useState([]);
+    useTitle('All Services');
     useEffect(() => {
         fetch('http://localhost:5000/fitness')
             .then(res => res.json())
