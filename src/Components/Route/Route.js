@@ -31,7 +31,7 @@ const router = createBrowserRouter([
             {
                 path: '/fitness/:id',
                 element: <FitnessDetails></FitnessDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/fitness/${params.id}`)
+                loader: ({ params }) => fetch(`https://online-gym-server.vercel.app/fitness/${params.id}`)
             },
             {
                 path: '/blog',

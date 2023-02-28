@@ -6,7 +6,7 @@ const AddTrainingShow = () => {
     const [adds, setAdds] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/add?email=${user?.email}`)
+        fetch(`https://online-gym-server.vercel.app/add?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setAdds(data))
     }, [user?.email]);

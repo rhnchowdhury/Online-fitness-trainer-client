@@ -5,7 +5,7 @@ import FitnessCard from './FitnessCard';
 const Fitness = () => {
     const [fitness, setFitness] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/fit')
+        fetch('https://online-gym-server.vercel.app/fit')
             .then(res => res.json())
             .then(data => {
                 setFitness(data)

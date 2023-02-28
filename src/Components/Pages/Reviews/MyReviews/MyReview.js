@@ -9,7 +9,7 @@ const MyReview = () => {
     useTitle('MyReview');
 
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews?email=${user?.email}`, {
+        fetch(`https://online-gym-server.vercel.app/reviews?email=${user?.email}`, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('gym-token')}`
             }
@@ -26,7 +26,7 @@ const MyReview = () => {
     const handleDelete = id => {
         const proceed = window.confirm('You want to cancel this order?')
         if (proceed) {
-            fetch(`http://localhost:5000/reviews/${id}`, {
+            fetch(`https://online-gym-server.vercel.app/reviews/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

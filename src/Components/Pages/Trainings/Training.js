@@ -6,7 +6,7 @@ const Training = () => {
     const [training, setTraining] = useState([]);
     useTitle('All Services');
     useEffect(() => {
-        fetch('http://localhost:5000/fitness')
+        fetch('https://online-gym-server.vercel.app/fitness')
             .then(res => res.json())
             .then(data => setTraining(data))
     }, [])

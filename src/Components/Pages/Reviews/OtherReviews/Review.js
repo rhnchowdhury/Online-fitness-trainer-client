@@ -5,7 +5,7 @@ const Review = () => {
     const [otherReview, setOtherReview] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://online-gym-server.vercel.app/reviews')
             .then(res => res.json())
             .then(data => setOtherReview(data))
     }, []);

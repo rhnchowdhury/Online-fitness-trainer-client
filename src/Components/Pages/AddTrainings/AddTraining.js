@@ -17,7 +17,7 @@ const AddTraining = () => {
         const added = {
             name, img, message, email
         };
-        fetch('http://localhost:5000/add', {
+        fetch('https://online-gym-server.vercel.app/add', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
