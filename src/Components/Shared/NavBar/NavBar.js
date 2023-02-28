@@ -37,7 +37,7 @@ const NavBar = () => {
         <li><Link to='/blog' className='text-white'>Blog</Link></li>
     </React.Fragment>
     return (
-        <div className="navbar" style={{ background: '#7b7b7b' }}>
+        <div className="navbar" style={{ backgroundColor: 'rgb(204, 165, 82)' }} >
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -47,7 +47,7 @@ const NavBar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <img src={img} alt="" className='w-16' />
+                <img src={img} alt="" className='w-16' style={{ color: 'black' }} />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

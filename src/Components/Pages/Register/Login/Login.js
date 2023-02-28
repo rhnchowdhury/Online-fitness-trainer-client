@@ -40,27 +40,27 @@ const Login = () => {
             .catch(err => console.error(err));
     };
     return (
-        <div className="hero mt-8 ">
-            <div className="hero-content flex-col lg:flex-row">
-                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl p-10">
+        <div className="hero" style={{ backgroundColor: 'rgb(204, 165, 82)' }}>
+            <div className="hero-content flex-col lg:flex-row my-8">
+                <div className="card flex-shrink-0 w-full shadow-2xl max-w-sm  p-10">
                     <h1 className="text-5xl text-center font-bold">Login now!</h1>
                     <form onSubmit={handleLogin} className="card-body">
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Email</span>
+                                <span className="label-text font-bold">Email</span>
                             </label>
-                            <input type="text" name='email' placeholder="email" className="input input-bordered" required />
+                            <input type="text" name='email' className="input" required style={{ backgroundColor: 'rgb(204, 171, 82)', border: '1px solid white' }} />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Password</span>
+                                <span className="label-text font-bold">Password</span>
                             </label>
-                            <input type="password" name='password' placeholder="password" className="input input-bordered" required />
+                            <input type="password" name='password' className="input " required style={{ backgroundColor: 'rgb(204, 171, 82)', border: '1px solid white' }} />
                         </div>
                         <div className="form-control mt-6">
-                            <input className="btn btn-primary" type="submit" value="Login" />
+                            <input className="btn bg-black" type="submit" value="Login" />
                         </div>
-                        <p>Have an account? <Link className='text-violet-600 font-bold' to='/signup'>Sign up</Link></p>
+                        <p>Have an account? <Link className='text-black font-bold' to='/signup'>Sign up</Link></p>
                     </form>
                 </div>
             </div>

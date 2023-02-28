@@ -6,7 +6,7 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 const FitnessCard = ({ fit }) => {
     const { image, title, price, details } = fit;
     return (
-        <div className="card w-80 glass mt-8">
+        <div className="card w-80 glass m-10">
             <figure>
                 <PhotoProvider>
                     <PhotoView src={image}>
@@ -15,11 +15,12 @@ const FitnessCard = ({ fit }) => {
                 </PhotoProvider>
             </figure>
             <div className="card-body">
-                <h2 className="card-title" style={{ color: 'rgb(204, 171, 82)' }}>{title}</h2>
+                <h2 className="card-title text-black" >{title}</h2>
+                {/* style={{ color: 'rgb(204, 171, 82)' }} */}
                 <p>{details.slice(0, 100) + "..."}</p>
                 <p><strong style={{ color: '#7b7b7b' }}>Subscription fee: </strong><span>${price}</span></p>
                 <div className="card-actions justify-end">
-                    <button className="btn" style={{ backgroundColor: 'rgb(204, 165, 82)', border: '2px solid rgb(204, 165, 82)' }}><BsArrowRight></BsArrowRight></button>
+                    <button className="btn" style={{ backgroundColor: 'black', border: '2px solid rgb(204, 165, 82)' }}><BsArrowRight></BsArrowRight></button>
                 </div>
             </div>
         </div>

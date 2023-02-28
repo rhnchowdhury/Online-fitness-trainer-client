@@ -51,9 +51,9 @@ const FitnessDetails = () => {
 
 
     return (
-        <div className='m-14'>
+        <div className='' style={{ background: '#2e2e2e' }}>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
-                <div>
+                <div className='m-10'>
                     <div className="card w-80 glass mt-8">
                         <figure>
                             <PhotoProvider>
@@ -63,25 +63,25 @@ const FitnessDetails = () => {
                             </PhotoProvider>
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title" style={{ color: 'rgb(204, 171, 82)' }}>{title}</h2>
-                            <p>{details}</p>
-                            <p><strong style={{ color: '#7b7b7b' }}>Subscription fee: </strong><span>${price}</span></p>
+                            <h2 className="card-title font-bold" style={{ color: 'rgb(204, 171, 82)' }}>{title}</h2>
+                            <p className='text-white'>{details}</p>
+                            <p className='text-white'><strong style={{ color: 'rgb(204, 171, 82)' }}>Subscription fee: </strong><span>${price}</span></p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h1 className='text-violet-700 font-bold text-4xl m-8 card-actions justify-center'>Others Review</h1>\
+                <div className='m-10'>
+                    <h1 className='font-bold text-4xl m-8 card-actions justify-center' style={{ color: 'rgb(204, 165, 82)' }}>Others Review</h1>\
                     <Review></Review>
-                    <h1 className='text-violet-700 font-bold text-4xl m-8 card-actions justify-center'>Add Your Review</h1>
+                    <h1 className='font-bold text-4xl m-8 card-actions justify-center' style={{ color: 'rgb(204, 165, 82)' }}>Add Your Review</h1>
                     <form onSubmit={handleReview}>
-                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4' >
                             <input name='first' type="text" placeholder="First Name" className="input input-bordered w-fulls" />
                             <input name='last' type="text" placeholder="Last Name" className="input input-bordered w-full" />
                             <input name='url' type="text" placeholder="Image URL" className="input input-bordered w-full" />
                             <input name='email' type="text" placeholder="Your Email" defaultValue={user?.email} className="input input-bordered w-full" readOnly />
                         </div>
                         <textarea className="textarea textarea-bordered h-24 w-full mt-2" name='message' placeholder="Your message"></textarea>
-                        <input className='btn  bg-violet-700 my-4' type="submit" value="Add review" />
+                        <input className='btn my-4' type="submit" value="Add review" style={{ backgroundColor: 'rgb(204, 171, 82)', border: 'rgb(204, 171, 82)' }} />
                     </form>
                 </div>
             </div>

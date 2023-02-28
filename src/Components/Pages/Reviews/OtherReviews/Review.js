@@ -16,10 +16,10 @@ const Review = () => {
 
                     <thead>
                         <tr>
-                            <th>Training Title</th>
-                            <th>Name</th>
-                            <th>Picture</th>
-                            <th>Message</th>
+                            <th style={{ color: 'rgb(204, 171, 82)' }}>Training Title</th>
+                            <th style={{ color: 'rgb(204, 171, 82)' }}>Name</th>
+                            <th style={{ color: 'rgb(204, 171, 82)' }}>Picture</th>
+                            <th style={{ color: 'rgb(204, 171, 82)' }}>Message</th>
                         </tr>
                     </thead>
                     <tbody>

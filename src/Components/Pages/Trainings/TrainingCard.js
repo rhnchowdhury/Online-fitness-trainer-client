@@ -7,7 +7,7 @@ const TrainingCard = ({ train }) => {
     const { _id, image, title, price, details } = train;
     console.log(train)
     return (
-        <div className="card w-80 glass mt-8">
+        <div className="card w-80 glass m-20">
             <figure>
                 <PhotoProvider>
                     <PhotoView src={image}>
@@ -16,8 +16,8 @@ const TrainingCard = ({ train }) => {
                 </PhotoProvider>
             </figure>
             <div className="card-body">
-                <h2 className="card-title" style={{ color: 'rgb(204, 171, 82)' }}>{title}</h2>
-                <p>{details.slice(0, 100) + "..."}</p>
+                <h2 className="card-title text-white">{title}</h2>
+                <p className='text-black'>{details.slice(0, 100) + "..."}</p>
                 <p><strong style={{ color: 'rgb(204, 171, 82)' }}>Subscription fee: </strong><span>${price}</span></p>
                 <div className="card-actions justify-end">
                     <Link to={`/fitness/${_id}`}><button className="btn" style={{ backgroundColor: 'rgb(204, 165, 82)', border: '2px solid rgb(204, 165, 82)' }}>View Details</button></Link>

@@ -30,7 +30,7 @@ const ReviewShow = ({ review, handleDelete }) => {
             </td>
             <td>{message}</td>
             <td>
-                <Link to='/updates'><button className="btn btn-ghost btn-xs">Edit Review</button></Link>
+                <Link to='/update'><button className="btn btn-ghost btn-xs">Edit Review</button></Link>
             </td>
         </tr>
 
