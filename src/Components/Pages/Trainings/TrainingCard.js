@@ -5,9 +5,8 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const TrainingCard = ({ train }) => {
     const { _id, image, title, price, details } = train;
-    console.log(train)
     return (
-        <div className="card w-80 glass m-20">
+        <div className="card lg:w-80 glass m-5 lg:m-20">
             <figure>
                 <PhotoProvider>
                     <PhotoView src={image}>

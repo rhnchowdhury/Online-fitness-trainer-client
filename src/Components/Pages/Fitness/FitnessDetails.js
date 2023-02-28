@@ -53,8 +53,8 @@ const FitnessDetails = () => {
     return (
         <div className='' style={{ background: '#2e2e2e' }}>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
-                <div className='m-10'>
-                    <div className="card w-80 glass mt-8">
+                <div className='m-5 lg:m-10'>
+                    <div className="card lg:w-80 glass mt-8">
                         <figure>
                             <PhotoProvider>
                                 <PhotoView src={image}>
@@ -70,11 +70,11 @@ const FitnessDetails = () => {
                     </div>
                 </div>
                 <div className='m-10'>
-                    <h1 className='font-bold text-4xl m-8 card-actions justify-center' style={{ color: 'rgb(204, 165, 82)' }}>Others Review</h1>\
+                    <h1 className='font-bold text-2xl lg:text-4xl lg:m-8 card-actions justify-center' style={{ color: 'rgb(204, 165, 82)' }}>Others Review</h1>\
                     <Review></Review>
-                    <h1 className='font-bold text-4xl m-8 card-actions justify-center' style={{ color: 'rgb(204, 165, 82)' }}>Add Your Review</h1>
+                    <h1 className='font-bold text-2xl lg:text-4xl mt-5 lg:m-8 card-actions justify-center' style={{ color: 'rgb(204, 165, 82)' }}>Add Your Review</h1>
                     <form onSubmit={handleReview}>
-                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4' >
+                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5' >
                             <input name='first' type="text" placeholder="First Name" className="input input-bordered w-fulls" />
                             <input name='last' type="text" placeholder="Last Name" className="input input-bordered w-full" />
                             <input name='url' type="text" placeholder="Image URL" className="input input-bordered w-full" />
