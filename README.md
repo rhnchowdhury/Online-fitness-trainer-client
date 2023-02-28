@@ -79,8 +79,8 @@ https://online-gym-trainer.netlify.app/
 
 ## Features:
 
-. It's online gym trainer related website.
-. Anyone can take fitness advice from here and he/she first login must.
-. After login user will see several parts. Home page is one of them.
-. There ar 3 cards and a button, if user will click this button he will go all trainings route.
-. from here he can subscribe any fitness advice.
+1.  It's online gym trainer related website.
+2. Anyone can take fitness advice from here and he/she first login must.
+3. After login user will see several parts. Home page is one of them.
+4. There ar 3 cards and a button, if user will click this button he will go all trainings route.
+5. From here he can subscribe any fitness advice.
