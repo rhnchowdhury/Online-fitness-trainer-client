@@ -11,20 +11,20 @@ const AddTrainingShow = () => {
             .then(data => setAdds(data))
     }, [user?.email]);
     return (
-        <div className='my-4 lg:m-20'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-black'>
             {
                 adds.map(ad => <div key={ad._id}>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-                        <div className="card lg:w-80 bg-base-100 shadow-xl">
-                            <figure >
-                                <img src={ad.img} alt="" className="w-full h-full" />
-                            </figure>
-                            <div className="card-body items-center text-center">
-                                <h2 className="card-title">{ad.name}</h2>
-                                <p>{ad.message}</p>
-                            </div>
+
+                    <div className="card lg:w-80 bg-base-100 shadow-xl m-20 bg-black">
+                        <figure >
+                            <img src={ad.img} alt="" className="w-full h-full" />
+                        </figure>
+                        <div className="card-body items-center text-center">
+                            <h2 className="card-title" style={{ color: 'rgb(204, 165, 82)' }}>{ad.name}</h2>
+                            <p className='text-white'>{ad.message}</p>
                         </div>
                     </div>
+
                 </div>)
             }
         </div>
