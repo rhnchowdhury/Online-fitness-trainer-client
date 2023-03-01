@@ -18,7 +18,7 @@ const Fitness = () => {
                     fitness.slice(0, 3).map(fit => <FitnessCard key={fit.course_id} fit={fit}></FitnessCard>)
                 }
             </div>
-            <div className='card-actions justify-center my-12'>
+            <div className='card-actions justify-center'>
                 <Link to='/fitness'><button className="btn text-white bg-black mb-10" >View All Training</button></Link>
             </div>
         </div>
